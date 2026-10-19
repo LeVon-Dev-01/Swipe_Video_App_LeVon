@@ -11,25 +11,40 @@ public class VideoRepository {
 
         videos.add(new VideoItem(
                 "1",
-                "Big Buck Bunny",
+                "Oso Run",
                 "",
-                "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                "https://github.com/LeVon-Dev-01/Swipe_Video_App_LeVon/blob/master/Videos/OsoRun.mp4"
         ));
 
         videos.add(new VideoItem(
                 "2",
-                "Elephants Dream",
+                "Ringo",
                 "",
-                "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                "https://github.com/LeVon-Dev-01/Swipe_Video_App_LeVon/blob/master/Videos/RingoClimb.mp4"
         ));
 
         videos.add(new VideoItem(
                 "3",
-                "For Bigger Escapes",
+                "Ruby",
                 "",
-                "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                "https://github.com/LeVon-Dev-01/Swipe_Video_App_LeVon/blob/master/Videos/RubyPet.mp4"
         ));
 
+
+        videos.add(new VideoItem(
+                "4",
+                "Scully Atack",
+                "",
+                "https://github.com/LeVon-Dev-01/Swipe_Video_App_LeVon/blob/master/Videos/ScullyAttack.mp4"
+
+        ));
+
+        videos.add(new VideoItem(
+                "5",
+                "Scully Bag",
+                "",
+                "https://github.com/LeVon-Dev-01/Swipe_Video_App_LeVon/blob/master/Videos/ScullyBag.mp4"
+        ));
         return videos;
     }
 }
