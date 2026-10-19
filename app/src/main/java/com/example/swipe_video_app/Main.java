@@ -8,13 +8,15 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import java.util.List;
 
-public class Main extends AppCompatActivity {
+public class Main extends AppCompatActivity
+{
 
     private ViewPager2 videoPager;
     private VideoPagerAdapter adapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
@@ -28,9 +30,11 @@ public class Main extends AppCompatActivity {
         videoPager.setAdapter(adapter);
 
         videoPager.registerOnPageChangeCallback(
-                new ViewPager2.OnPageChangeCallback() {
+                new ViewPager2.OnPageChangeCallback()
+                {
                     @Override
-                    public void onPageSelected(int position) {
+                    public void onPageSelected(int position)
+                    {
                         adapter.playVideo(position);
                     }
                 }
@@ -38,17 +42,21 @@ public class Main extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
+    protected void onResume()
+    {
         super.onResume();
 
-        if (videoPager != null && adapter != null) {
+        if (videoPager != null && adapter != null)
+        {
             adapter.playVideo(videoPager.getCurrentItem());
         }
     }
 
     @Override
-    protected void onPause() {
-        if (adapter != null) {
+    protected void onPause()
+    {
+        if (adapter != null)
+        {
             adapter.pauseAll();
         }
 
@@ -56,8 +64,10 @@ public class Main extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        if (videoPager != null) {
+    protected void onDestroy()
+    {
+        if (videoPager != null)
+        {
             videoPager.setAdapter(null);
         }
 

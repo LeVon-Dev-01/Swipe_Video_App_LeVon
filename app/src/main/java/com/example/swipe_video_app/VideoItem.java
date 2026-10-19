@@ -1,7 +1,8 @@
 
 package com.example.swipe_video_app;
 
-public class VideoItem {
+public class VideoItem
+{
 
     private final String id;
     private final String title;
